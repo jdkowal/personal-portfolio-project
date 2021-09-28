@@ -17,7 +17,6 @@ nav {
     display: flex;
     background-color: cadetblue;
     justify-content: flex-end;
-    align-content: flex-end;
     color: white;
     height: 100px;
 }
@@ -39,16 +38,38 @@ aside {
     background-color: lightcoral;
     box-sizing: content-box;
     width: 25%;
+    margin: 10px;
 }
 
+aside p {
+    margin: 10px
+}
 
+.profile-pic {  
+    height: 300px;
+    border-radius: 50%;
+    border: 10px;
+    border-style: solid;
+    border-color: springgreen;
+    margin: 10px;
+}
 
-section {
+section, div {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    order: 2;
     box-sizing: content-box;
     background-color: lightslategray;
     width: 70%;
+    margin: 20px;
+}
+
+section > img {
+    width: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 h2 {
