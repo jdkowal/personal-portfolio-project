@@ -1,18 +1,29 @@
+/* setting standard */
+
+*{
+    box-sizing: border-box;
+
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    background-color: #a6d0c8;
+    background-color: #A67DB8;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
 }
 
-h1 {
-    font-size: 50px;
+h1,
+h2,
+h3 {
+    margin: 0;
 }
 
-a:hover {
-    background-color: darkmagenta;
-    color:white
+p {
+    margin: 0;
 }
+
+/* setting up the header and top of the site */
 
 header {
     display: flex;
@@ -20,78 +31,189 @@ header {
     flex-wrap:wrap;
     justify-content: space-between;
     align-items:center;
-    margin: 20px 40px 5px 20px;
+    background-color: #4F5D75;
+    box-shadow: 0 5px 35px black;
 }
+
+h1 {
+    color: white;
+    background-color: #7261A3;
+    padding:5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, grey 0%, grey 100%);
+    background-repeat: no-repeat; 
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25 ease-in;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    background-size: 100% 100% teal;
+    background-color:blueviolet;
+    color: white;
+}
+
+nav a:last-child{
+    margin-right: 0;
+}
+
+/* setting standard */
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    margin-right: 20px;
+}
+
+/* formatting the hero for my header */
 
 .hero {
     position: relative;
     display: flex;
-    height: 200px;
-    width: 100%;
-    margin-bottom: 30px;
-    background-image: url("../images/purplehero.jpg");
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    min-height: 30vh;
+    background-image: url("../images/purplehero.jpg"), linear-gradient(180deg,teal 0%, grey 100%);
     background-size: cover;
     background-position: center;
+    color: whitesmoke;
+    padding: 2% 6%;
 }
 
-.hero h2 {
-    position: relative;
-    
-    color: white;
-    margin: 20px;
+.hero div {
+    flex: 0 0 90%;
+}
+
+hero h2 {
+    background-color: teal;
+    color: black;
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+}
+
+/* formatting content of the site */
+
+.wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right:100%;
 }
 
 .boxSection {
     display:flex;
-    margin: 50px;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 25px 0;  
+    padding: 10px 0;
 }
 
-h2 {
-    margin: 30px
+.boxSection h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid #395756;
+    font-size: 4vw;
+    line-height: 1.1;
+    color:white;
 }
 
-h3 {
-    padding: 10px
+.boxSection div {
+    flex: 0 0 77%;
 }
 
-span {
-    padding: 10px
+.boxSection p {
+    margin-bottom: 20px;
+
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxItems {
+    border: 5px solid #395756;
+    background-color: grey;
+    color: white;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 10px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+}
+
+.boxItems:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.boxItems:hover {
+    background-color:black;
+    opacity: .1;
+}
+
+.boxItems div {
+    background-color: #395756;
+    padding: 9px 10px;
+}
+
+.boxItems h3 {
+    font-size: 1.6rem;
+
+}
 
 .surf {
     flex-grow: 1;
-    width: 400px;
-    height: 200px;
     background-image: url("../images/1056-350x350.jpg");
-    border: 40px;
-    border-style: solid;
-    border-color: blue;
-    margin: 50px;
-    background-color: darksalmon;
-    color: darkslategrey;
 }
 
 .wall {
     background-image: url("../images/114-350x350.jpg");
-    background-size: 100% 333px;
 }
 
 .calc {
     background-image: url("../images/183-350x350.jpg");
-    background-size: 300px 333px;
 }
 
 .buddy{
     background-image: url("../images/639-350x350.jpg");
-    background-size: 300px 333px;
 }
 
 .yt2 {
     background-image: url("../images/641-350x350.jpg");
-    background-size: 300px 333px;
 }
+
+/* formatting bottom contact me section of the site */
 
 .addressSection {
     display: flex;
@@ -99,12 +221,34 @@ span {
     margin: 50px;
 }
 
-.addressSection a {
-    margin: 15px;
-    
+.contactBox {
+    display: flex;
+    flex-wrap: wrap;
+
+
 }
 
-section > a {
-    display: flex;
-    flex-grow: inherit;
+.contactBox a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 10px;
+    color:white;
+    margin-right: 10px;
+    font-size: 1.4rem;
+}
+
+.contactHover a:hover {
+    background-color:blueviolet;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    body {
+    flex-direction: column;
+    }
+
+    .boxItems{
+        flex-direction: column;
+    }
 }
