@@ -1,0 +1,110 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: #a6d0c8;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+a:hover {
+    background-color: darkmagenta;
+    color:white
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+    margin: 20px 40px 5px 20px;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-image: url("../images/purplehero.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    position: relative;
+    
+    color: white;
+    margin: 20px;
+}
+
+.boxSection {
+    display:flex;
+    margin: 50px;
+    
+}
+
+h2 {
+    margin: 30px
+}
+
+h3 {
+    padding: 10px
+}
+
+span {
+    padding: 10px
+}
+
+
+.surf {
+    flex-grow: 1;
+    width: 400px;
+    height: 200px;
+    background-image: url("../images/1056-350x350.jpg");
+    border: 40px;
+    border-style: solid;
+    border-color: blue;
+    margin: 50px;
+    background-color: darksalmon;
+    color: darkslategrey;
+}
+
+.wall {
+    background-image: url("../images/114-350x350.jpg");
+    background-size: 100% 333px;
+}
+
+.calc {
+    background-image: url("../images/183-350x350.jpg");
+    background-size: 300px 333px;
+}
+
+.buddy{
+    background-image: url("../images/639-350x350.jpg");
+    background-size: 300px 333px;
+}
+
+.yt2 {
+    background-image: url("../images/641-350x350.jpg");
+    background-size: 300px 333px;
+}
+
+.addressSection {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.addressSection a {
+    margin: 15px;
+    
+}
+
+section > a {
+    display: flex;
+    flex-grow: inherit;
+}
