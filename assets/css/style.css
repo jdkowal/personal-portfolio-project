@@ -215,40 +215,61 @@ hero h2 {
 
 /* formatting bottom contact me section of the site */
 
-.addressSection {
+/* .addressSection {
     display: flex;
     align-items: center;
     margin: 50px;
-}
+} */
 
-.contactBox {
+.contactBox address{
     display: flex;
     flex-wrap: wrap;
-
-
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
-.contactBox a {
+.contactBox address a {
     display: inline-block;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px;
     color:white;
-    margin-right: 10px;
+    margin: 0 0.2rem 0.1rem;
     font-size: 1.4rem;
 }
 
-.contactHover a:hover {
+.contactBox address a:hover {
     background-color:blueviolet;
     color: white;
+    background-size: 100% 88%;
+
+
+} 
+
+
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+header {
+    background: #772014;
+}
 }
 
+/* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
-    /* Use flex-direction to stack the navbar, sidebar, and body */
-    body {
-    flex-direction: column;
-    }
+.boxItems, 
+.boxItems:first-child {
+    flex-basis: 100%:
+    
+}
 
-    .boxItems{
-        flex-direction: column;
-    }
+.boxItems:first-child{
+    min-height: 150px;
+
+}
+
+.contactBox address{
+    flex-direction: column;
+    align-items: flex-start;
+}
 }
